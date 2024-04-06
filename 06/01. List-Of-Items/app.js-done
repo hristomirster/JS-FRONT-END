@@ -1,0 +1,9 @@
+function addItem() {
+    const textElement = document.querySelector('#newItemText').value;
+    const li = document.createElement('li');
+
+    li.appendChild(document.createTextNode(textElement));
+    document.querySelector('#items').appendChild(li);
+    document.querySelector('#newItemText').value = '';
+    
+}
