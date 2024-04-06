@@ -1,0 +1,15 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "file:///C:/Users/hvasilev2/OneDrive%20-%20DXC%20Production/Trainings/softuni/Python/Programming%20Advanced%20with%20Python/JS%20Front-End/JS/05-DOM%20Introduction-Exercise/JS-Advanced-DOM-Introduction-Exercise-Resources-New/04.%20Search%20in%20List/list.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
