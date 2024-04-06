@@ -12,7 +12,7 @@ function attachEvents() {
 
     allPosts = {}
 
-    async function loadPostsEvent(event) {
+    async function loadPostsEvent() {
         postsSelect.innerHTML = ''
         let allPostsResponse = await fetch(postsURL)
         allPosts = await allPostsResponse.json()
@@ -20,12 +20,12 @@ function attachEvents() {
         for (let postArr of Object.entries(allPosts)) {
             let option = document.createElement('option')
             option.textContent = postArr[1].title
-            option.value = postArr[1].id;
+            option.value = postArr[0]
             postsSelect.appendChild(option)
         }
     }
 
-    async function viewPostEvent(event) {
+    async function viewPostEvent() {
         let currentPostObject = document.getElementById('posts')
         let currentPostComments = []
 
