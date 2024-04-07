@@ -19,6 +19,16 @@ button {
   cursor: pointer;
 }
 
+li {
+  display: flex; /* Using flexbox */
+  justify-content: space-between; /* Align items to each end */
+  align-items: center; /* Align vertically center */
+}
+
+li button {
+  margin-left: auto; /* Push the button to the right */
+}
+
 button:hover {
   background-color: #45a049;
 }
