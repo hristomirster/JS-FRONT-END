@@ -10,9 +10,9 @@ function solve() {
     deleteButton.addEventListener('click', reloadpage);
 
     const addButton = document.querySelector("#add-btn");
-    addButton.addEventListener("click", getinformation);
+    addButton.addEventListener("click", addInformation);
 
-    function getinformation() {
+    function addInformation() {
         if (
             expenseInputElement.value == "" ||
             amountInputElement == "" ||
@@ -71,7 +71,7 @@ function solve() {
         function addtoExpensesField() {
             expenseListElement.appendChild(liExpenseItem)
             liExpenseItem.removeChild(divExpenseItem);
-            previewListElement.removeChild(liExpenseItem);
+            // previewListElement.removeChild(liExpenseItem);
 
         }
     }
