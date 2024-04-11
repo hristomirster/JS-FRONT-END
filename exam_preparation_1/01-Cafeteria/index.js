@@ -8,7 +8,7 @@ function solve(input) {
             shift: shift,
             cofeeTypes: cofeeTypes.split(","),
         };
-    }
+    };
 
     let commandLine = input.shift();
 
@@ -35,7 +35,9 @@ function solve(input) {
                 if (team[name].cofeeTypes.includes(args[0])) {
                     console.log(`${name} knows how to make ${args[0]}.`);
                 } else {
-                    console.log(`${name} has learned a new coffee type: ${args[0]}.`);
+                    console.log(
+                        `${name} has learned a new coffee type: ${args[0]}.`
+                    );
                     team[name].cofeeTypes.push(args[0]);
                 }
                 break;
@@ -47,10 +49,13 @@ function solve(input) {
     }
 
     for (const name in team) {
-        console.log(`Barista: ${name}, Shift: ${team[name].shift}, Drinks: ${team[name].cofeeTypes.join(', ')}`);
+        console.log(
+            `Barista: ${name}, Shift: ${team[name].shift}, Drinks: ${team[
+                name
+            ].cofeeTypes.join(", ")}`
+        );
     }
     // console.log(team);
-    
 }
 
 solve([
