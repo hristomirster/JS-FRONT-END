@@ -17,6 +17,7 @@ function attachEvents() {
         for (const mesage of responseMessages) {
             textAreaMessage.value += `${mesage.author}: ${mesage.content}\n`;
         }
+        textAreaMessage.value = textAreaMessage.value.trim();
     });
 
     sendButton.addEventListener("click", async () => {
